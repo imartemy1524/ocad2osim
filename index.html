@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.OCD to .OSIM</title>
+    <script src="main.js" type="module"></script>
+    <script src="ocadtogeojson.js" type="module"></script>
+    <script src="./worker/structs.js" type="module"></script>
+    <script src="./worker/structs.js" type="module"></script>
+    <script src="./tools/clipper.js" type="module"></script>
+    <script src="./tools/jquery.js" type="module"></script>
+    <link type="text/css" rel="stylesheet" href="data-html/styles.css">
+</head>
+<body style="padding: 0; margin: 0">
+    <div id="help-tips">Please press "Load File" button</div>
+    <canvas width="500" height="500" style="background: antiquewhite; max-width: 100vw; max-height: 100vh;" id="canvas"></canvas>
+    <div>
+        <label for="ocad-input">Ocad file:  </label>
+        <input accept=".ocd, .ocad" type="file" id="ocad-input"/>
+        <br>
+        <label for="image-preview">Map preview ( 256x256 ): </label>
+        <input accept="image/png" type="file" id="image-preview"/>
+    </div>
+</body>
+</html>
